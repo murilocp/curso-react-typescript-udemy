@@ -8,7 +8,7 @@ const Dashboard: React.FC = () => {
   const options = [
     { label: "Ana", value: "Ana" },
     { label: "Rodrigo", value: "Rodrigo" },
-    { label: "Dunha", value: "Dunha" },
+    { label: "Mary", value: "Mary" },
   ];
 
   const frutas = [
