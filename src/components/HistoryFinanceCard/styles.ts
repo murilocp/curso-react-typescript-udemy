@@ -8,7 +8,7 @@ export const Container = styled.li`
   background-color: ${(props) => props.theme.colors.tertiary};
 
   list-style: none;
-  border-radius: 5px;
+  border-radius: 10px;
 
   margin: 10px 0;
   padding: 12px 10px;
@@ -36,12 +36,21 @@ export const Container = styled.li`
   }
 
   > div span {
+    font-size: 20px;
+    font-weight: bold;
+
+    line-height: 23px;
+    margin-bottom: 3px;
+  }
+
+  > div small {
+    font-size: 14px;
   }
 `;
 
 export const Tag = styled.div<ITagProps>`
-  width: 10px;
-  height: 60%;
+  width: 14px;
+  height: 31px;
 
   background-color: ${(props) => props.color};
 
