@@ -11,17 +11,13 @@ const Dashboard: React.FC = () => {
     { label: "Mary", value: "Mary" },
   ];
 
-  const frutas = [
-    { label: "Maçãs", value: "Maçãs" },
-    { label: "Bananas", value: "Bananas" },
-    { label: "Laranjas", value: "Laranjas" },
-  ];
-
   return (
     <Container>
       <ContentHeader title="Dashboard" lineColor="#F7931B">
-        <SelectInput options={options} />
-        <SelectInput options={frutas} />
+        <SelectInput
+          options={options}
+          onChange={(e) => console.log(e.target.value)}
+        />
       </ContentHeader>
     </Container>
   );
